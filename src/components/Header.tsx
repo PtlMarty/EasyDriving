@@ -1,18 +1,18 @@
 const Header = () => {
   return (
-    <div className="flex flex-row h-100 p-3 bg-slate-400">
-      <div className="flex justify-start">
-        <a href="#">
-          <img src="../public/vite.svg" alt="logo" />
+    <header className="flex items-center h-[114px] px-5 bg-gray-100">
+      <div className="text-2xl font-bold">MonLogo</div>
+      <div className="flex-grow"></div>
+      <nav className="flex gap-16">
+        <a href="#link1" className="text-gray-800 text-lg hover:text-blue-300">
+          Home
         </a>
-        <div className="flex flex-row justify-center gap-5">
-          <div className="flex flex-row gap-5">
-            <a href="#">Home</a>
-            <a href="#">About us</a>
-          </div>
-        </div>
-      </div>
-    </div>
+        <a href="#link2" className="text-gray-800 text-lg hover:text-blue-300">
+          About
+        </a>
+      </nav>
+      <div className="flex-grow"></div>
+    </header>
   );
 };
 

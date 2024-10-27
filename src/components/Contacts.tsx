@@ -5,7 +5,9 @@ import {
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { DialogTitle } from "@radix-ui/react-dialog";
 import { Mails, PhoneOutgoing, Smartphone } from "lucide-react";
+import InquiryForm from "./InquiryForm";
 
 const Contacts = () => {
   return (
@@ -17,10 +19,13 @@ const Contacts = () => {
             <DialogTrigger className="flex flex-col items-center">
               <Mails className="text-blue-600" />
             </DialogTrigger>
-            <DialogContent className="p-0 bg-white">
+            <DialogContent className=" bg-white flex align-middle justify-center p-4">
               <DialogHeader>
-                <DialogDescription className="flex flex-col bg-white justify-center items-center gap-5 my-3">
-                  //TODO: Add form for contacting
+                <DialogTitle className="text-center font-bold text-primary">
+                  Contact Us{" "}
+                </DialogTitle>
+                <DialogDescription>
+                  <InquiryForm />
                 </DialogDescription>
               </DialogHeader>
             </DialogContent>

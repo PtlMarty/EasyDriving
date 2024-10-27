@@ -1,5 +1,8 @@
 import { HeroProps } from "@/lib/type";
 
+//TODO: add dynamique image
+//TODO: add hover, transition, etc.
+
 const Hero = ({ className }: HeroProps) => {
   return (
     <div className={`relative rounded-xl ${className}`}>

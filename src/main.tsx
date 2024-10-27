@@ -1,14 +1,16 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import Footer from "./components/Footer.tsx";
-import Header from "./components/Header.tsx"; // Adjust the path as necessary
-import App from "./pages/App.tsx"; // Adjust the path as necessary
-import "./styles/index.css";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "./App";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
+root.render(
+  <BrowserRouter>
     <Header />
     <App />
     <Footer />
-  </StrictMode>
+  </BrowserRouter>
 );

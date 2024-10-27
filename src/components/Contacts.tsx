@@ -9,7 +9,7 @@ import { Mails, PhoneOutgoing, Smartphone } from "lucide-react";
 
 const Contacts = () => {
   return (
-    <div>
+    <section>
       <aside className="flex gap-6 m-auto justify-center items-center">
         {/* EMAIL */}
         <div>
@@ -93,7 +93,7 @@ const Contacts = () => {
           </Dialog>
         </div>
       </aside>
-    </div>
+    </section>
     // TODO: Add more contact methods here as needed (e.g., LinkedIn, Twitter)
     // TODO: Implement responsiveness for different screen sizes
   );

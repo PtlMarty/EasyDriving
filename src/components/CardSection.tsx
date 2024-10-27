@@ -7,10 +7,10 @@ import { Button } from "./ui/button";
 const CardSection = ({ ClassName }: { ClassName: string }) => {
   return (
     <section
-      className={`flex sm:flex-col gap-3 justify-center m-10 ${ClassName}`}
+      className={`flex sm:flex-col gap-3 justify-center m-auto ${ClassName}`}
     >
       <div className="rounded-xl card-section">
-        <Card className="size-96 flex flex-col border-none shadow-none m-10">
+        <Card className="size-96 flex flex-col border-none shadow-none m-6 xl:m-16">
           <CardContent className="flex flex-col justify-center items-center flex-grow relative">
             <div className="relative w-full h-full">
               <img
@@ -36,7 +36,7 @@ const CardSection = ({ ClassName }: { ClassName: string }) => {
         </Card>
       </div>
       <div className="rounded-xl card-section">
-        <Card className="size-96 flex flex-col border-none shadow-none m-10">
+        <Card className="size-96 flex flex-col border-none shadow-none m-6">
           <CardContent className="flex flex-col justify-center items-center flex-grow relative">
             <div className="relative w-full h-full">
               <img
@@ -62,7 +62,7 @@ const CardSection = ({ ClassName }: { ClassName: string }) => {
         </Card>
       </div>
       <div className="rounded-xl card-section">
-        <Card className="size-96 flex flex-col border-none shadow-none m-10">
+        <Card className="size-96 flex flex-col border-none shadow-none m-6">
           <CardContent className="flex flex-col justify-center items-center flex-grow relative">
             <div className="relative w-full h-full">
               <img

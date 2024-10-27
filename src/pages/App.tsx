@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import CardSection from "@/components/CardSection";
 import Contacts from "../components/Contacts";
 import Hero from "../components/Hero";
@@ -11,6 +12,7 @@ function App() {
       <main className="w-full p-2 ">
         <Hero className="flex justify-center" />
         <CardSection ClassName="flex flex-col xl:flex-row items-center justify-center scroll-m-0 overflow-hidden" />
+        <About />
         <Contacts />
       </main>
     </>

@@ -9,8 +9,8 @@ function App() {
   return (
     <>
       <main className="w-full p-2 ">
-        <Hero className=" flex justify-center " />
-        <CardSection />
+        <Hero className="flex justify-center" />
+        <CardSection ClassName="flex flex-col xl:flex-row items-center justify-center scroll-m-0 overflow-hidden" />
         <Contacts />
       </main>
     </>

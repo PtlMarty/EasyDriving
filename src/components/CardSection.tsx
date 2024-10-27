@@ -1,12 +1,15 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import "./../styles/card-section.css";
+import { Button } from "./ui/button";
 
 //todo add button to pop up a modal with more details about the transfer
 
-const CardSection = () => {
+const CardSection = ({ ClassName }: { ClassName: string }) => {
   return (
-    <section className="flex  sm:flex-row gap-3 justify-center m-10">
-      <div className="rounded-xl  card-section">
+    <section
+      className={`flex sm:flex-col gap-3 justify-center m-10 ${ClassName}`}
+    >
+      <div className="rounded-xl card-section">
         <Card className="size-96 flex flex-col border-none shadow-none m-10">
           <CardContent className="flex flex-col justify-center items-center flex-grow relative">
             <div className="relative w-full h-full">
@@ -22,15 +25,17 @@ const CardSection = () => {
                   className="h-16 w-16"
                 />
                 <p>Your transfer From Haneda to your Hotel</p>
+                <div className="flex justify-center items-center mt-3">
+                  <CardFooter>
+                    <Button variant={"default"}>Click Here</Button>
+                  </CardFooter>
+                </div>
               </div>
             </div>
           </CardContent>
-          <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter>
         </Card>
       </div>
-      <div className="rounded-xl  card-section">
+      <div className="rounded-xl card-section">
         <Card className="size-96 flex flex-col border-none shadow-none m-10">
           <CardContent className="flex flex-col justify-center items-center flex-grow relative">
             <div className="relative w-full h-full">
@@ -46,15 +51,17 @@ const CardSection = () => {
                   className="h-16 w-16"
                 />
                 <p>Your transfer From Haneda to your Hotel</p>
+                <div className="flex justify-center items-center mt-3">
+                  <CardFooter>
+                    <Button variant={"default"}>Click Here</Button>
+                  </CardFooter>
+                </div>
               </div>
             </div>
           </CardContent>
-          <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter>
         </Card>
       </div>
-      <div className="rounded-xl  card-section">
+      <div className="rounded-xl card-section">
         <Card className="size-96 flex flex-col border-none shadow-none m-10">
           <CardContent className="flex flex-col justify-center items-center flex-grow relative">
             <div className="relative w-full h-full">
@@ -70,12 +77,14 @@ const CardSection = () => {
                   className="h-16 w-16"
                 />
                 <p>Your transfer From Haneda to your Hotel</p>
+                <div className="flex justify-center items-center mt-3">
+                  <CardFooter>
+                    <Button variant={"default"}>Click Here</Button>
+                  </CardFooter>
+                </div>
               </div>
             </div>
           </CardContent>
-          <CardFooter>
-            <p>Card Footer</p>
-          </CardFooter>
         </Card>
       </div>
     </section>

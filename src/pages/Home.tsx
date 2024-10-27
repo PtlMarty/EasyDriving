@@ -2,6 +2,7 @@ import About from "@/components/About";
 import CardSection from "@/components/CardSection";
 import Contacts from "../components/Contacts";
 import Hero from "../components/Hero";
+
 import "../styles/App.css";
 
 function App() {

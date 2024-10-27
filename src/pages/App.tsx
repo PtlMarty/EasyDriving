@@ -4,7 +4,7 @@ import "../styles/App.css";
 function App() {
   return (
     <>
-      <main className="w-full p-2 bg-slate-600">
+      <main className="w-full p-2 bg-slate-300">
         <Hero className=" flex justify-center " />
       </main>
     </>
